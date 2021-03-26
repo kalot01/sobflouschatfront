@@ -1,0 +1,70 @@
+* {
+  font-family: Raleway;
+}
+.auth_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.auth_gauchecontainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #593772;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60vh;
+  color: white;
+  border: solid 2px #593772;
+}
+.auth_bienvenue {
+  font-size: 24px;
+}
+.auth_text {
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.auth_gotosignup {
+  border: solid 2px white;
+  border-radius: 1vw;
+  padding: 10px;
+  background: none;
+  cursor: pointer;
+  width: 15vw;
+  color: white;
+}
+.auth_droitecontainer {
+  border: solid 2px #593772;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  width: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.auth_logosobflous {
+  width: 20vw;
+  margin-bottom: 10px;
+}
+.auth_signin {
+  border: solid 2px white;
+  border-radius: 1vw;
+  padding: 10px;
+  background-color: #593772;
+  cursor: pointer;
+  width: 15vw;
+  color: white;
+  margin-bottom: 20px;
+}
+.auth_form {
+  flex-direction: column;
+}
+.auth_form input {
+  margin: 10px;
+  padding: 6px;
+  width: 15vw;
+  border-radius: 0.6vw;
+}

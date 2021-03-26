@@ -1,0 +1,214 @@
+.dashboard_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.dashboard_gauchecontainer {
+  width: 300px;
+  height: 100%;
+}
+
+.dashboard_iconandname {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.dashboard_icon {
+  font-size: 38px;
+  color: #593772;
+}
+.dashboard_username {
+  font-size: 24px;
+  padding-left: 12px;
+  padding-top: 6px;
+}
+.dashboard_icons {
+  font-size: 38px;
+  color: #593772;
+  padding-left: 12px;
+  padding-top: 6px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.dashboard_icons i {
+  cursor: pointer;
+}
+.dashboard_messangescontainer {
+  margin-top: 25px;
+  padding: 12px;
+  overflow: auto;
+  height: 460px;
+}
+.dashboard_userelement {
+  font-size: 18px;
+  color: #593772;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.dashboard_userelement i,
+.dashboard_userelement span {
+  cursor: pointer;
+}
+.dashboard_userelement :first-child {
+  margin: 6px;
+}
+.dashboard_usersname {
+  color: black;
+  font-size: 16px;
+}
+.dashboard_userelement :nth-child(3),
+.dashboard_userelement :nth-child(4) {
+  font-size: 16px;
+  margin: 5px;
+}
+.dashboard_recherche {
+  width: 92%;
+  padding: 12px 20px;
+  margin: 8px 0px 8px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #593772;
+  outline: none;
+}
+.dashboard_hr {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.dashboard_droitecontainer {
+  flex: 1;
+  background-color: #edf0f5;
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.dashboard_talkingtoname {
+  color: #593772;
+  font-size: 24px;
+}
+.dashboard_separating {
+  border-color: white;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.dashboard_sendmsg {
+  border-radius: 5px;
+  border: 1px solid #593772;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard_txtbox {
+  width: 100%;
+  background-color: #edf0f5;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+.dashboard_send_icon {
+  color: #593772;
+  font-size: 24px;
+  margin-right: 24px;
+}
+.msg-receive {
+  margin: 5px 5px;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px;
+  max-width: 40vw;
+  align-self: flex-start;
+}
+
+.msg-sent {
+  margin: 5px 5px;
+  background-color: #0084db;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 20px;
+  max-width: 40vw;
+  align-self: flex-end;
+}
+
+.dashboard_msg {
+  background-color: #edf0f5;
+  display: flex;
+  flex-direction: column;
+  height: 580px;
+  overflow: auto;
+}
+.dashboard_haverequests {
+  color: green !important;
+}
+.dashboard_addmodal {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #edf0f5;
+  color: white;
+}
+.dashboard_addmodaltop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #593772;
+}
+.dashboard_modalclose {
+  cursor: pointer;
+}
+.dashboard_addmodaltop span {
+  padding: 5px 10px 5px 10px;
+}
+.dashboard_modal {
+  position: absolute;
+  width: 40vw;
+  height: 40vh;
+  top: calc(50% - 20vh);
+  left: calc(50% - 20vw);
+}
+.dashboard_addsearch input {
+  width: 92%;
+  padding: 12px 20px;
+  margin: 8px 0px 8px 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #593772;
+  outline: none;
+}
+.dashboard_addmodalpersons {
+  height: 300px;
+  overflow: auto;
+}
+.dashboardaddmodalperson {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  padding: 16px;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.dashboardaddmodalperson button {
+  outline: none;
+  background-color: #593772;
+  padding: 6px;
+  color: white;
+  cursor: pointer;
+}
+.dashboardaddmodalperson span {
+  padding-top: 6px;
+  margin-right: 20px;
+}

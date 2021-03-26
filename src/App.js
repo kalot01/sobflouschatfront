@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Auth from "./Components/Auth/auth";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Dashboard from "./Components/Dashboard/dashboard";
+import axios from "axios";
+export let axiosInstance = axios.create({
+  baseURL: "http://127.0.0.1:7354/api",
+  Headers: {
+    "Content-Type": "application/json",
+  },
+});
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={Auth} />
+        <Route path="/dashboard" exact component={Dashboard} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
