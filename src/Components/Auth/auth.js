@@ -13,9 +13,9 @@ export default function Auth() {
       })
       .then((resp) => {
         if (resp.status == 201) {
-          console.log(resp.data);
           window.sessionStorage.setItem("username", resp.data.username);
           window.sessionStorage.setItem("token", resp.data.token);
+          window.sessionStorage.setItem("id", resp.data._id);
           history.push("/dashboard");
         } else {
           alert(resp.data.error);
@@ -67,14 +67,14 @@ export default function Auth() {
           <img src={logo} className="auth_logosobflous" />
           <div className="auth_form">
             <input
-              placeholder="Username"
+              placeholder="Nom de Compte"
               onChange={(event) => {
                 setUsername(event.target.value);
               }}
             />
             <br />
             <input
-              placeholder="Password"
+              placeholder="Mot de passe"
               type="password"
               onChange={(event) => {
                 setPassword(event.target.value);
@@ -82,7 +82,7 @@ export default function Auth() {
             />
             <br />
             <input
-              placeholder="Confirm Password"
+              placeholder="Confirmation du Mot de Passe"
               type="password"
               onChange={(event) => {
                 setConfirmPassword(event.target.value);
@@ -90,7 +90,7 @@ export default function Auth() {
             />
           </div>
           <button className="auth_signin" onClick={signup}>
-            SIGN UP
+            S'inscrire
           </button>
         </div>
         <div className="auth_gauchecontainer">
@@ -105,7 +105,7 @@ export default function Auth() {
               setClicked(0);
             }}
           >
-            SIGN IN
+            Se connecter
           </button>
         </div>
       </div>
@@ -125,21 +125,21 @@ export default function Auth() {
             setClicked(1);
           }}
         >
-          SIGN UP
+          S'inscrire
         </button>
       </div>
       <div className="auth_droitecontainer">
         <img src={logo} className="auth_logosobflous" />
         <div className="auth_form">
           <input
-            placeholder="Username"
+            placeholder="Nom de Compte"
             onChange={(event) => {
               setUsername(event.target.value);
             }}
           />
           <br />
           <input
-            placeholder="Password"
+            placeholder="Mot de Passe"
             type="password"
             onChange={(event) => {
               setPassword(event.target.value);
@@ -147,7 +147,7 @@ export default function Auth() {
           />
         </div>
         <button className="auth_signin" onClick={login}>
-          SIGN IN
+          Se connecter
         </button>
       </div>
     </div>
