@@ -5,7 +5,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Dashboard from "./Components/Dashboard/dashboard";
 import axios from "axios";
 export let axiosInstance = axios.create({
-  baseURL: "http://127.0.0.1:7354/api",
+  baseURL: "http://51.75.253.157:7354/api",
   Headers: {
     "Content-Type": "application/json",
   },

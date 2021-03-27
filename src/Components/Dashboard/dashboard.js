@@ -5,7 +5,7 @@ import Modal from "react-modal";
 import "./dashboard.css";
 import logo from "../../assets/sobflous.png";
 import io from "socket.io-client";
-const ENDPOINT = "http://127.0.0.1:7354";
+const ENDPOINT = "http://51.75.253.157:7354";
 let socket = io.connect(ENDPOINT);
 
 Modal.setAppElement("#root");
